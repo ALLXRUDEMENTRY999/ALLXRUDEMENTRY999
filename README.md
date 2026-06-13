@@ -1,16 +1,108 @@
-- 👋 Hi, I’m @ALLXRUDEMENTRY999
-- 👀 I’m interested in ...the ways that individuals interact with cyberspace.
-- 🌱 I’m currently learning ...How to make the Metaverse more interoperable between applications.
-- 💞️ I’m looking to collaborate on ...any project that is willing to pay me.
-- 📫 How to reach me ...You can reach me with nextoneup999@gmail.com
-- 😄 Pronouns: ...Mr.Kohler
-- ⚡ Fun fact: ...I have been exploring the Internet and I have been banned from many areas.
-- I have been banned from most ecosystems and social playforms due to my research as a Web3 Pioneer.
-- I have never actually broken the law or stolen from anyone.
-- I am one of the best white hats that there are in my opinon.
-- I operate as a sole-entrepreneur and as an individual who explores the World Wide Web.
-- I am currently looking for a job since my buisness itself hasn't made any money.
-<!---
-ALLXRUDEMENTRY999/ALLXRUDEMENTRY999 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+# CloudVault Mobile App
+
+A mobile application that allows you to create personal clouds for storing any type of data securely.
+
+## Features
+- 📱 Create unlimited personal clouds
+- 📁 Store files, documents, images, and any data type
+- 🔒 Secure encryption for all data
+- ☁️ Sync across multiple devices
+- 👥 Share data securely with others
+- 🏷️ Organize with folders and tags
+
+## Tech Stack
+- **Mobile:** React Native (iOS & Android)
+- **Backend:** Node.js + Express
+- **Database:** MongoDB
+- **Storage:** AWS S3
+- **Authentication:** JWT
+
+## Quick Start
+
+### Prerequisites
+- Node.js 16+
+- npm or yarn
+- React Native CLI
+- Android Studio or Xcode (for mobile development)
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/ALLXRUDEMENTRY999/ALLXRUDEMENTRY999.git
+cd ALLXRUDEMENTRY999
+
+# Install backend dependencies
+cd backend
+npm install
+
+# Install mobile dependencies
+cd ../mobile
+npm install
+```
+
+### Running the Backend
+
+```bash
+cd backend
+npm start
+```
+
+The backend server will run on `http://localhost:5000`
+
+### Running the Mobile App
+
+```bash
+cd mobile
+
+# For Android
+npm run android
+
+# For iOS
+npm run ios
+```
+
+## Project Structure
+
+```
+.
+├── backend/           # Node.js Express server
+│   ├── routes/
+│   ├── controllers/
+│   ├── models/
+│   ├── middleware/
+│   └── server.js
+├── mobile/            # React Native app
+│   ├── screens/
+│   ├── components/
+│   ├── services/
+│   ├── navigation/
+│   └── App.js
+├── docs/              # Documentation
+└── README.md
+```
+
+## API Endpoints
+
+### Authentication
+- `POST /api/auth/register` - Create a new account
+- `POST /api/auth/login` - Login to account
+
+### Clouds
+- `GET /api/clouds` - Get all user clouds
+- `POST /api/clouds` - Create a new cloud
+- `GET /api/clouds/:id` - Get cloud details
+- `DELETE /api/clouds/:id` - Delete a cloud
+
+### Data Storage
+- `POST /api/clouds/:id/upload` - Upload file to cloud
+- `GET /api/clouds/:id/files` - Get files in cloud
+- `DELETE /api/clouds/:id/files/:fileId` - Delete file
+
+## Contributing
+
+Feel free to submit issues and enhancement requests!
+
+## License
+
+MIT License - See LICENSE file for details
